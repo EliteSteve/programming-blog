@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet", href="Blog (Elliott S).css">
+
+        <title>Portfolio: Elliott Stevens</title>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active title" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle title" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Programming
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Blog (C).html">C</a></li>
+                                <li><a class="dropdown-item" href="Blog (Python).html">Python</a></li>
+                                <li><a class="dropdown-item" href="Blog (Web).html">Web (HTML/CSS/JavaScript)</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle title" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Content Areas
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Blog (CA1-4).html">Content Area 1-4</a></li>
+                                <li><a class="dropdown-item" href="Blog (CA5-8).html">Content Area 5-8</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle title" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Blog (UX,UI).html">UX/UI</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Blog (Functional).html">Funct/Non Funct</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Blog (Placement).html">Industry Placement</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Blog (Contact).html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row row-cols-3">
+                <div class="col-3" id="halfBoxes">
+                    <div class="content">
+                        <u>Scenario Project Requirements</u>
+                        <p>For this project, you need to develop a secure online voting system that can be used by small and medium organizations such as high schools, colleges, and corporations.</p>                       
+                        <p>The basic model will require a login system where the administrators of the election can set up basic parameters such as the number of candidates, whether they want to show the election live, and when to announce the winner.</p>
+                        <p>It should also include a security system for the voters. They must confirm their identity and there should be dual verification either from their phone numbers or registered email.</p>
+                        <p>The more advanced version will integrate AI for any suspicious votes and notify the administrators if need be. It could also collect relevant data such as religion, gender, ethnicity, region, occupation etc and then share this data so that future candidates can learn who is supporting them.</p>
+                    </div>
+                    <div class="content">
+                        <img src="funct_img.jpg" alt="Functional & Non-Functional Requirements Image">
+                    </div>
+                </div>                
+                <div class="col-3">
+                    <div class="content-funct">
+                        <u>Functional Requirements</u>
+                        <table>
+                            <tr>
+                                <th>Requirement</th>
+                                <th>Priority </th>
+                                <th>Justification</th>
+                            </tr>
+                            <tr>
+                                <td>System should provide a login.</td>
+                                <td>High</td>
+                                <td>This is required for users to access the system to cast their votes.</td>
+                            </tr>
+                            <tr>
+                                <td>System should allow users to cast their votes.</td>
+                                <td>High</td>
+                                <td>This is the base functionality of the project.</td>
+                            </tr>
+                            <tr>
+                                <td>System must store the votes somewhere e.g: a server.</td>
+                                <td>High</td>
+                                <td>This is necessary to ensure that the votes can be properly counted and verified.</td>
+                            </tr>
+                            <tr>
+                                <td>System should allow administers to set up basic parameters.</td>
+                                <td>Medium</td>
+                                <td>Some aspects are necessary to establish for the voting to run properly, others are not.</td>
+                            </tr>
+                            <tr>
+                                <td>System should allow voters to verify their identity.</td>
+                                <td>Medium</td>
+                                <td>Keeps the results of the voting clean but not mandatory for the system to run.</td>
+                            </tr>
+                            <tr>
+                                <td>System should allow dual verification for either phone numbers or mobile.</td>
+                                <td>Low</td>
+                                <td>Helps keep the system secure by confirming identity, but isn’t necessary for the system to function.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="we-do-a-lil-trolling">
+                        <u>Non-Functional Requirements</u>
+                        <table>
+                            <tr>
+                                <th>Requirement</th>
+                                <th>Priority </th>
+                                <th>Justification</th>
+                            </tr>
+                            <tr>
+                                <td>System should be secure.</td>
+                                <td>High</td>
+                                <td>The security being high will ensure the validity of the votes that have been entered.</td>
+                            </tr>
+                            <tr>
+                                <td>System should detect suspicious votes.</td>
+                                <td>High</td>
+                                <td>This is helpful to ensure that fraudulent votes are not counted.</td>
+                            </tr>
+                            <tr>
+                                <td>System should remove suspicious votes.</td>
+                                <td>Medium</td>
+                                <td>This is useful for keeping the ballots clean of fake votes, but they could be just identified and ignored instead.</td>
+                            </tr>
+                            <tr>
+                                <td>System should collect user data.</td>
+                                <td>Medium</td>
+                                <td>The data could be used by candidates for more targeted marketing. The audience must be informed that their data is being taken and what exact data it is.</td>
+                            </tr>
+                            <tr>
+                                <td>System should share user data with participants.</td>
+                                <td>Medium</td>
+                                <td>Allows candidates to make judgements using data but it could be given on request as opposed to having it all be sent.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</html>
